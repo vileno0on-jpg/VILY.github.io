@@ -19,7 +19,7 @@
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
 
-  <!-- Tailwind -->
+   <!-- Tailwind -->
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -53,10 +53,20 @@
       word-wrap: break-word; 
       max-width: 100%; 
       overflow-x: auto;
+      background: #1a1a1a !important;
     }
     .ad-unit { min-height: 280px; background: #f9fafb; border-radius: 16px; padding: 1rem; }
     .sticky-cta { animation: pulse 2s infinite; }
     @keyframes pulse { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.05); } }
+
+    /* Mobile-first responsive */
+    @media (max-width: 640px) {
+      h1 { font-size: 2.5rem !important; }
+      h2 { font-size: 1.75rem !important; }
+      .tool-card { padding: 1.5rem; }
+      pre { font-size: 0.8rem; padding: 1rem; }
+      .ad-unit { min-height: 250px; }
+    }
   </style>
 </head>
 <body class="font-sans">
@@ -67,10 +77,10 @@
       <h1 class="text-5xl md:text-6xl font-display font-bold text-gray-900 mb-6 leading-tight">
         I Went from <span class="text-primary">$800</span> to <span class="text-primary">$12K/Month</span> on Etsy Using AI
       </h1>
-      <p class="text-xl text-gray-600 mb-10 max-w-3xl mx-auto">
+      <p class="text-lg md:text-xl text-gray-600 mb-10 max-w-3xl mx-auto">
         Here are the <strong>7 AI tools</strong>, <strong>exact prompts</strong>, and <strong>47-minute workflow</strong> that generate <strong>$300–$1,000 per listing</strong>.
       </p>
-      <img src="https://images.unsplash.com/photo-1519389950470-47ba2b3e6cf5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80" alt="Etsy AI Dashboard" class="hero-img mx-auto mb-10">
+      <img src="https://images.unsplash.com/photo-1519389950470-47ba2b3e6cf5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80" alt="Etsy AI Dashboard" class="hero-img mx-auto mb-10 w-full object-cover h-64 md:h-96">
       <a href="#free-pack" class="inline-block bg-primary text-white font-bold py-4 px-10 rounded-full text-lg shadow-xl hover:shadow-2xl transition">
         Download FREE 37-Prompt Pack
       </a>
@@ -94,10 +104,10 @@
       <section class="tool-card bg-white p-8 rounded-2xl mb-12">
         <div class="flex items-center gap-4 mb-6">
           <div class="bg-primary text-white w-12 h-12 rounded-xl flex items-center justify-center text-xl font-bold">1</div>
-          <h2 class="text-3xl font-display font-bold text-gray-900">Mokker AI – Pro Mockups in 45 Seconds ($29/mo)</h2>
+          <h2 class="text-2xl md:text-3xl font-display font-bold text-gray-900">Mokker AI – Pro Mockups in 45 Seconds ($29/mo)</h2>
         </div>
-        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80" alt="Mokker AI Mockup" class="rounded-xl shadow-lg mb-6 w-full object-cover h-80">
-        <p class="text-lg mb-4"><strong>Before AI:</strong> I spent 2 hours in Photoshop per mockup, often paying $50+ on Fiverr. <strong>After:</strong> 45 seconds.</p>
+        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80" alt="Mokker AI Mockup" class="rounded-xl shadow-lg mb-6 w-full object-cover h-64 md:h-80">
+        <p class="text-base md:text-lg mb-4"><strong>Before AI:</strong> I spent 2 hours in Photoshop per mockup, often paying $50+ on Fiverr. <strong>After:</strong> 45 seconds.</p>
         <p class="mb-6">I upload a plain white photo of my product (like a beeswax candle), select a scene like “Cozy Living Room,” and Mokker AI generates 5 professional angles in seconds. No lighting issues, no shadows to fix — just stunning, Etsy-ready visuals that make my listings pop. The AI understands lighting, perspective, and product placement better than most photographers. I’ve tested 20+ mockup tools — Mokker wins every time.</p>
         <p class="font-semibold text-primary mb-4">Real result: My conversion rate jumped 42% after switching to Mokker mockups. One listing now makes $800/month passive.</p>
         <a href="https://mokker.ai/?ref=etsyai" target="_blank" class="inline-block bg-primary text-white font-bold py-3 px-6 rounded-full hover:bg-primary/90 transition">
@@ -115,10 +125,10 @@
       <section class="tool-card bg-white p-8 rounded-2xl mb-12">
         <div class="flex items-center gap-4 mb-6">
           <div class="bg-primary text-white w-12 h-12 rounded-xl flex items-center justify-center text-xl font-bold">2</div>
-          <h2 class="text-3xl font-display font-bold text-gray-900">ChatGPT “Etsy Wizard” – Rank #1 in 9 Days (Free–$20/mo)</h2>
+          <h2 class="text-2xl md:text-3xl font-display font-bold text-gray-900">ChatGPT “Etsy Wizard” – Rank #1 in 9 Days (Free–$20/mo)</h2>
         </div>
-        <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80" alt="ChatGPT Etsy Prompt" class="rounded-xl shadow-lg mb-6 w-full object-cover h-80">
-        <p class="text-lg mb-4">I used to write descriptions in 30 minutes — boring, keyword-stuffed, no sales. Now, I copy-paste this prompt into ChatGPT and get a 160-word masterpiece in seconds.</p>
+        <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80" alt="ChatGPT Etsy Prompt" class="rounded-xl shadow-lg mb-6 w-full object-cover h-64 md:h-80">
+        <p class="text-base md:text-lg mb-4">I used to write descriptions in 30 minutes — boring, keyword-stuffed, no sales. Now, I copy-paste this prompt into ChatGPT and get a 160-word masterpiece in seconds.</p>
         <p class="mb-6">It includes emotional storytelling (“light up her evening”), 5 long-tail keywords (“eco-friendly gift for her”), sensory details, eco-packaging, and a strong CTA. I just replace [product] with my item. The AI understands Etsy’s algorithm: it uses natural language, avoids spam, and targets buyer psychology. I’ve A/B tested 50+ descriptions — this prompt wins every time.</p>
         <p class="font-semibold text-primary mb-4">Result: One candle listing went from page 7 to <strong>page 1 in 9 days</strong>. Now makes <strong>$1,200/month passive</strong>.</p>
         <pre><code class="language-plaintext">You are an Etsy SEO expert with 10 years of experience. Write a 160-word product description for a [handmade beeswax candle] that smells like vanilla and lavender. Include:
@@ -137,10 +147,10 @@ Target: gift buyers aged 25–45. Tone: warm, luxurious, trustworthy.</code></pr
       <section class="tool-card bg-white p-8 rounded-2xl mb-12">
         <div class="flex items-center gap-4 mb-6">
           <div class="bg-primary text-white w-12 h-12 rounded-xl flex items-center justify-center text-xl font-bold">3</div>
-          <h2 class="text-3xl font-display font-bold text-gray-900">EtsyHunt AI – Find $10K/Month Products ($19/mo)</h2>
+          <h2 class="text-2xl md:text-3xl font-display font-bold text-gray-900">EtsyHunt AI – Find $10K/Month Products ($19/mo)</h2>
         </div>
-        <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80" alt="EtsyHunt Dashboard" class="rounded-xl shadow-lg mb-6 w-full object-cover h-80">
-        <p class="text-lg mb-6">I used to guess trends. Now, EtsyHunt AI shows me products with high search volume, low competition, and rising trends — before they explode. It analyzes 10M+ listings daily.</p>
+        <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80" alt="EtsyHunt Dashboard" class="rounded-xl shadow-lg mb-6 w-full object-cover h-64 md:h-80">
+        <p class="text-base md:text-lg mb-6">I used to guess trends. Now, EtsyHunt AI shows me products with high search volume, low competition, and rising trends — before they explode. It analyzes 10M+ listings daily.</p>
         <p class="mb-6">I spotted “mushroom lamp” 3 months early. Invested $200 in materials. <strong>Sold $47,000 in 90 days</strong>. It shows profit margin, review count, and trend velocity — all in one dashboard. No more launching duds.</p>
         <p class="font-semibold text-primary">Stop guessing. Start winning.</p>
         <a href="https://etsyhunt.ai/?ref=etsyai" target="_blank" class="inline-block bg-primary text-white font-bold py-3 px-6 rounded-full mt-4 hover:bg-primary/90 transition">
@@ -158,12 +168,12 @@ Target: gift buyers aged 25–45. Tone: warm, luxurious, trustworthy.</code></pr
       <section class="tool-card bg-white p-8 rounded-2xl mb-12">
         <div class="flex items-center gap-4 mb-6">
           <div class="bg-primary text-white w-12 h-12 rounded-xl flex items-center justify-center text-xl font-bold">4</div>
-          <h2 class="text-3xl font-display font-bold text-gray-900">Canva Magic Studio – 10 Pinterest Pins in 60 Seconds (Free)</h2>
+          <h2 class="text-2xl md:text-3xl font-display font-bold text-gray-900">Canva Magic Studio – 10 Pinterest Pins in 60 Seconds (Free)</h2>
         </div>
-        <img src="https://images.unsplash.com/photo-1611224923853-80b023a2f870?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80" alt="Canva Pinterest Pins" class="rounded-xl shadow-lg mb-6 w-full object-cover h-80">
-        <p class="text-lg mb-6">I used to spend 2 hours designing one pin. Now, I type: “Create 10 Pinterest pins for lavender candle gift” — and Canva’s AI generates 10 ready-to-post images in 60 seconds.</p>
+        <img src="https://images.unsplash.com/photo-1611224923853-80b023a2f870?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80" alt="Canva Pinterest Pins" class="rounded-xl shadow-lg mb-6 w-full object-cover h-64 md:h-80">
+        <p class="text-base md:text-lg mb-6">I used to spend 2 hours designing one pin. Now, I type: “Create 10 Pinterest pins for lavender candle gift” — and Canva’s AI generates 10 ready-to-post images in 60 seconds.</p>
         <p class="mb-6">Each pin has perfect dimensions, trending fonts, and eye-catching colors. I schedule them on Pinterest and watch traffic flood in. No design skills needed.</p>
-        <p class="font-semibold text-primary">Result: Pinterest traffic increased <strong>300%</strong> in 30 days.</p>
+        <p class="font-semibold text-primary">ResultResult: Pinterest traffic increased <strong>300%</strong> in 30 days.</p>
         <a href="https://canva.com/join/ai-etsy" target="_blank" class="inline-block bg-primary text-white font-bold py-3 px-6 rounded-full mt-4 hover:bg-primary/90 transition">
           Start Canva Free
         </a>
@@ -173,10 +183,10 @@ Target: gift buyers aged 25–45. Tone: warm, luxurious, trustworthy.</code></pr
       <section class="tool-card bg-white p-8 rounded-2xl mb-12">
         <div class="flex items-center gap-4 mb-6">
           <div class="bg-primary text-white w-12 h-12 rounded-xl flex items-center justify-center text-xl font-bold">5</div>
-          <h2 class="text-3xl font-display font-bold text-gray-900">Helium 10 Cerebro – Steal Amazon Winners ($39/mo)</h2>
+          <h2 class="text-2xl md:text-3xl font-display font-bold text-gray-900">Helium 10 Cerebro – Steal Amazon Winners ($39/mo)</h2>
         </div>
-        <img src="https://images.unsplash.com/photo-1556742111-a381df1861a4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80" alt="Helium 10 Dashboard" class="rounded-xl shadow-lg mb-6 w-full object-cover h-80">
-        <p class="text-lg mb-6">I search Amazon for best-sellers, then use Cerebro to see exact keywords and sales data. Found “cat slow feeder bowl” — copied the design, tweaked it, and launched on Etsy.</p>
+        <img src="https://images.unsplash.com/photo-1556742111-a381df1861a4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80" alt="Helium 10 Dashboard" class="rounded-xl shadow-lg mb-6 w-full object-cover h-64 md:h-80">
+        <p class="text-base md:text-lg mb-6">I search Amazon for best-sellers, then use Cerebro to see exact keywords and sales data. Found “cat slow feeder bowl” — copied the design, tweaked it, and launched on Etsy.</p>
         <p class="mb-6">No guesswork. Just proven winners. <strong>$3,200/month passive</strong> from one product. It shows search volume, competition, and revenue estimates.</p>
         <a href="https://helium10.com/?ref=etsyai" target="_blank" class="inline-block bg-primary text-white font-bold py-3 px-6 rounded-full mt-4 hover:bg-primary/90 transition">
           Try Helium 10
@@ -187,10 +197,10 @@ Target: gift buyers aged 25–45. Tone: warm, luxurious, trustworthy.</code></pr
       <section class="tool-card bg-white p-8 rounded-2xl mb-12">
         <div class="flex items-center gap-4 mb-6">
           <div class="bg-primary text-white w-12 h-12 rounded-xl flex items-center justify-center text-xl font-bold">6</div>
-          <h2 class="text-3xl font-display font-bold text-gray-900">Tidio AI Chatbot – 24/7 Sales Assistant ($29/mo)</h2>
+          <h2 class="text-2xl md:text-3xl font-display font-bold text-gray-900">Tidio AI Chatbot – 24/7 Sales Assistant ($29/mo)</h2>
         </div>
-        <img src="https://images.unsplash.com/photo-1596526131083-e8c633c948d2?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80" alt="Tidio Chatbot" class="rounded-xl shadow-lg mb-6 w-full object-cover h-80">
-        <p class="text-lg mb-6">Customers ask: “Do you ship to Canada?” or “Can I add gift wrap?” Tidio’s AI answers instantly, 24/7 — even while I sleep.</p>
+        <img src="https://images.unsplash.com/photo-1596526131083-e8c633c948d2?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80" alt="Tidio Chatbot" class="rounded-xl shadow-lg mb-6 w-full object-cover h-64 md:h-80">
+        <p class="text-base md:text-lg mb-6">Customers ask: “Do you ship to Canada?” or “Can I add gift wrap?” Tidio’s AI answers instantly, 24/7 — even while I sleep.</p>
         <p class="mb-6">It upsells: “Want matching lavender soap?” → <strong>+19% add-to-cart rate</strong>. I trained it once — now it handles 90% of messages.</p>
         <a href="https://tidio.com/?ref=etsyai" target="_blank" class="inline-block bg-primary text-white font-bold py-3 px-6 rounded-full mt-4 hover:bg-primary/90 transition">
           Try Tidio
@@ -201,10 +211,10 @@ Target: gift buyers aged 25–45. Tone: warm, luxurious, trustworthy.</code></pr
       <section class="tool-card bg-white p-8 rounded-2xl mb-12">
         <div class="flex items-center gap-4 mb-6">
           <div class="bg-primary text-white w-12 h-12 rounded-xl flex items-center justify-center text-xl font-bold">7</div>
-          <h2 class="text-3xl font-display font-bold text-gray-900">Printify + Midjourney – Zero-Inventory AI POD (Free–$29/mo)</h2>
+          <h2 class="text-2xl md:text-3xl font-display font-bold text-gray-900">Printify + Midjourney – Zero-Inventory AI POD (Free–$29/mo)</h2>
         </div>
-        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80" alt="Midjourney T-Shirt" class="rounded-xl shadow-lg mb-6 w-full object-cover h-80">
-        <p class="text-lg mb-6">I type: <code>/imagine minimalist line art cat wearing sunglasses --v 5</code> → Midjourney creates art. I upload to Printify → they print and ship t-shirts, mugs, etc.</p>
+        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80" alt="Midjourney T-Shirt" class="rounded-xl shadow-lg mb-6 w-full object-cover h-64 md:h-80">
+        <p class="text-base md:text-lg mb-6">I type: <code>/imagine minimalist line art cat wearing sunglasses --v 5</code> → Midjourney creates art. I upload to Printify → they print and ship t-shirts, mugs, etc.</p>
         <p class="mb-6"><strong>$0 upfront inventory</strong>. I only pay when a sale is made. One design makes $500/month passive. No warehouse, no shipping — just profit.</p>
         <a href="https://printify.com/?ref=etsyai" target="_blank" class="inline-block bg-primary text-white font-bold py-3 px-6 rounded-full mt-4 hover:bg-primary/90 transition">
           Try Printify
@@ -212,26 +222,28 @@ Target: gift buyers aged 25–45. Tone: warm, luxurious, trustworthy.</code></pr
       </section>
 
       <!-- WORKFLOW TABLE -->
-      <h2 class="text-4xl font-display font-bold text-center my-16">My 47-Minute AI Workflow</h2>
-      <table class="w-full border-collapse mb-16 text-left">
-        <thead class="bg-primary text-white">
-          <tr><th class="p-5 text-lg">Step</th><th class="p-5 text-lg">Tool</th><th class="p-5 text-lg">Time</th></tr>
-        </thead>
-        <tbody class="bg-gray-50">
-          <tr><td class="p-5">1. Trend Spotting</td><td class="p-5">EtsyHunt AI</td><td class="p-5">15 min</td></tr>
-          <tr><td class="p-5">2. Design</td><td class="p-5">Midjourney</td><td class="p-5">10 min</td></tr>
-          <tr><td class="p-5">3. Mockups</td><td class="p-5">Mokker</td><td class="p-5">5 min</td></tr>
-          <tr><td class="p-5">4. Description</td><td class="p-5">ChatGPT</td><td class="p-5">7 min</td></tr>
-          <tr><td class="p-5">5. Pins</td><td class="p-5">Canva</td><td class="p-5">10 min</td></tr>
-          <tr class="bg-purple-100 font-bold"><td colspan="2" class="p-5">Total Revenue Potential</td><td class="p-5">$300–$1K</td></tr>
-        </tbody>
-      </table>
+      <h2 class="text-3xl md:text-4xl font-display font-bold text-center my-16">My 47-Minute AI Workflow</h2>
+      <div class="overflow-x-auto">
+        <table class="w-full border-collapse mb-16 text-left text-sm md:text-base">
+          <thead class="bg-primary text-white">
+            <tr><th class="p-4 md:p-5">Step</th><th class="p-4 md:p-5">Tool</th><th class="p-4 md:p-5">Time</th></tr>
+          </thead>
+          <tbody class="bg-gray-50">
+            <tr><td class="p-4 md:p-5">1. Trend Spotting</td><td class="p-4 md:p-5">EtsyHunt AI</td><td class="p-4 md:p-5">15 min</td></tr>
+            <tr><td class="p-4 md:p-5">2. Design</td><td class="p-4 md:p-5">Midjourney</td><td class="p-4 md:p-5">10 min</td></tr>
+            <tr><td class="p-4 md:p-5">3. Mockups</td><td class="p-4 md:p-5">Mokker</td><td class="p-4 md:p-5">5 min</td></tr>
+            <tr><td class="p-4 md:p-5">4. Description</td><td class="p-4 md:p-5">ChatGPT</td><td class="p-4 md:p-5">7 min</td></tr>
+            <tr><td class="p-4 md:p-5">5. Pins</td><td class="p-4 md:p-5">Canva</td><td class="p-4 md:p-5">10 min</td></tr>
+            <tr class="bg-purple-100 font-bold"><td colspan="2" class="p-4 md:p-5">Total Revenue Potential</td><td class="p-4 md:p-5">$300–$1K</td></tr>
+          </tbody>
+        </table>
+      </div>
 
       <!-- FREE PACK CTA -->
-      <div id="free-pack" class="bg-gradient-to-r from-purple-50 to-pink-50 p-12 rounded-3xl text-center my-20 border border-purple-200">
-        <h2 class="text-4xl font-display font-bold mb-6">Steal My FREE Etsy AI Prompt Pack</h2>
-        <p class="text-xl mb-8">37 ChatGPT prompts + Midjourney formulas + Canva templates<br>Used to generate <strong>$100K+ in sales</strong></p>
-        <a href="#" onclick="openPopup()" class="inline-block bg-primary text-white font-bold py-4 px-12 rounded-full text-lg shadow-xl hover:shadow-2xl transition">
+      <div id="free-pack" class="bg-gradient-to-r from-purple-50 to-pink-50 p-10 md:p-12 rounded-3xl text-center my-20 border border-purple-200">
+        <h2 class="text-3xl md:text-4xl font-display font-bold mb-6">Steal My FREE Etsy AI Prompt Pack</h2>
+        <p class="text-lg md:text-xl mb-8">37 ChatGPT prompts + Midjourney formulas + Canva templates<br>Used to generate <strong>$100K+ in sales</strong></p>
+        <a href="#" onclick="openPopup()" class="inline-block bg-primary text-white font-bold py-4 px-10 md:px-12 rounded-full text-base md:text-lg shadow-xl hover:shadow-2xl transition">
           Download FREE Now
         </a>
       </div>
@@ -239,7 +251,7 @@ Target: gift buyers aged 25–45. Tone: warm, luxurious, trustworthy.</code></pr
     </article>
 
     <!-- Ad Grid -->
-    <div class="grid md:grid-cols-2 gap-8 my-16">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 my-16">
       <div class="ad-unit"><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-1234567890123456" data-ad-slot="4444444444" data-ad-format="auto"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script></div>
       <div class="ad-unit"><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-1234567890123456" data-ad-slot="5555555555" data-ad-format="auto"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script></div>
     </div>
@@ -247,26 +259,28 @@ Target: gift buyers aged 25–45. Tone: warm, luxurious, trustworthy.</code></pr
   </div>
 
   <!-- STICKY CTA -->
-  <div class="fixed bottom-6 right-6 z-50 sticky-cta">
-    <a href="#free-pack" class="bg-primary text-white p-4 rounded-full shadow-2xl font-bold flex items-center gap-2 hover:scale-110 transition">
-      <span>🎁</span> FREE Pack
+  <div class="fixed bottom-4 right-4 z-50 sticky-cta md:bottom-6 md:right-6">
+    <a href="#free-pack" class="bg-primary text-white p-3 md:p-4 rounded-full shadow-2xl font-bold flex items-center gap-2 hover:scale-110 transition text-sm md:text-base">
+      <span>Free Pack</span>
     </a>
   </div>
 
-  <!-- POP-UP -->
-  <div class="fixed inset-0 bg-black bg-opacity-60 hidden z-50" id="overlay" onclick="closePopup()"></div>
-  <div class="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-white p-8 rounded-3xl shadow-2xl max-w-md w-full hidden z-50" id="popup">
-    <button class="absolute -top-4 -right-4 bg-red-500 text-white w-10 h-10 rounded-full text-xl" onclick="closePopup()">×</button>
-    <h3 class="text-2xl font-display font-bold mb-4">🎉 Your FREE Prompt Pack</h3>
-    <form action="https://YOUR_FORM_LINK" method="POST">
-      <input type="email" placeholder="you@etsy.com" class="w-full p-4 rounded-xl border mb-4" required>
-      <button type="submit" class="w-full bg-primary text-white py-4 rounded-xl font-bold text-lg">Send Me the Prompts</button>
-    </form>
+  <!-- OVERLAY POP-UP -->
+  <div class="fixed inset-0 bg-black bg-opacity-70 hidden z-50 flex items-center justify-center p-4" id="overlay" onclick="closePopup()">
+    <div class="bg-white p-6 md:p-8 rounded-3xl shadow-2xl max-w-md w-full relative" onclick="event.stopPropagation()">
+      <button class="absolute -top-3 -right-3 bg-red-500 text-white w-10 h-10 rounded-full text-xl font-bold" onclick="closePopup()">×</button>
+      <h3 class="text-2xl md:text-3xl font-display font-bold mb-4 text-center">Your FREE Prompt Pack</h3>
+      <form action="https://YOUR_FORM_LINK" method="POST" class="space-y-4">
+        <input type="email" placeholder="you@etsy.com" class="w-full p-3 md:p-4 rounded-xl border text-base" required>
+        <button type="submit" class="w-full bg-primary text-white py-3 md:py-4 rounded-xl font-bold text-base md:text-lg">Send Me the Prompts</button>
+      </form>
+      <p class="text-xs text-gray-500 text-center mt-4">No spam. Unsubscribe anytime.</p>
+    </div>
   </div>
 
   <script>
-    function openPopup(){document.getElementById('popup').classList.remove('hidden');document.getElementById('overlay').classList.remove('hidden');}
-    function closePopup(){document.getElementById('popup').classList.add('hidden');document.getElementById('overlay').classList.add('hidden');}
+    function openPopup(){document.getElementById('overlay').classList.remove('hidden');}
+    function closePopup(){document.getElementById('overlay').classList.add('hidden');}
     setTimeout(openPopup, 15000);
   </script>
 
