@@ -1,206 +1,204 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
-  <!-- SEO -->
-  <title>7 AI Tools Etsy Sellers Use to 3X Sales in 2025 (Free Prompts)</title>
-  <meta name="description" content="I grew from $800 to $12K/month on Etsy using AI. Here are the 7 tools + exact prompts, workflows, and case studies I use daily. Free 37-prompt pack included.">
-  <meta property="og:title" content="7 AI Tools Etsy Sellers Use to 3X Sales in 2025">
-  <meta property="og:description" content="Free Etsy AI Prompt Pack + $12K/mo system">
-  <meta property="og:image" content="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80">
-  <meta property="og:url" content="https://yourname.netlify.app">
-  <meta name="twitter:card" content="summary_large_image">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>7 AI Tools That 3X'd My Etsy Sales to $12K/Mo in 2025 (Free Prompts + Workflow)</title>
+  <meta name="description" content="From $800 to $12K/month on Etsy using AI. Full 47-min workflow, exact prompts, case studies, and free 37-prompt pack.">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="article"/>
+  <meta property="og:title" content="7 AI Tools That 3X'd My Etsy Sales to $12K/Mo in 2025"/>
+  <meta property="og:description" content="Steal my exact AI system + get 37 free prompts"/>
+  <meta property="og:image" content="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80"/>
+  <meta property="og:url" content="https://yourname.netlify.app"/>
 
-, mobile-first">
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image"/>
 
-  <!-- Google AdSense -->
+  <!-- AdSense -->
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1234567890123456" crossorigin="anonymous"></script>
 
-  <!-- Prism.js for Code Highlighting -->
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Inter', 'sans-serif'] },
+          colors: { primary: '#6C5CE7' }
+        }
+      }
+    }
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Prism.js -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-core.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/autoloader/prism-autoloader.min.js"></script>
 
-  <!-- Schema -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "BlogPosting",
-    "headline": "7 AI Tools Etsy Sellers Use to 3X Sales in 2025",
-    "datePublished": "2025-10-29",
-    "author": {"@type": "Person", "name": "AI Etsy Pro"},
-    "image": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80",
-    "publisher": {"@type": "Organization", "name": "Etsy AI Hustle"}
-  }
-  </script>
-
   <style>
-    :root { --p: #6C5CE7; --t: #1a1a1a; --bg: #ffffff; --light: #f8f9fa; --gray: #666; }
-    * { box-sizing: border-box; }
-    body { font-family: 'Inter', -apple-system, sans-serif; background: var(--bg); color: var(--t); line-height: 1.8; margin: 0; padding: 0; }
-    .container { max-width: 800px; margin: 0 auto; padding: 2rem 1rem; }
-    h1, h2, h3 { color: #1a1a1a; font-weight: 700; }
-    h1 { font-size: 2.8rem; text-align: center; margin: 2rem 0 1rem; }
-    h2 { font-size: 1.8rem; margin: 2.5rem 0 1rem; padding-bottom: 0.5rem; border-bottom: 2px solid #eee; }
-    .hero { background: linear-gradient(135deg, #6C5CE7, #A29BFE); color: white; padding: 4rem 1rem; text-align: center; border-radius: 0 0 20px 20px; }
-    .hero h1 { color: white; margin: 0 0 1rem; }
-    .hero p { font-size: 1.3rem; margin: 0 0 1.5rem; }
-    .hero img { max-width: 100%; border-radius: 16px; margin: 1.5rem 0; box-shadow: 0 10px 30px rgba(0,0,0,0.2); }
-    .btn { background: white; color: var(--p); padding: 1rem 2rem; border-radius: 50px; text-decoration: none; font-weight: bold; display: inline-block; box-shadow: 0 4px 15px rgba(108,92,231,0.3); transition: 0.3s; }
-    .btn:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(108,92,231,0.4); }
-    .card { background: white; border-radius: 16px; padding: 2rem; margin: 2rem 0; box-shadow: 0 8px 25px rgba(0,0,0,0.08); border: 1px solid #f0f0f0; }
-    .card img { width: 100%; border-radius: 12px; margin: 1rem 0; }
-    .ad { text-align: center; margin: 3rem 0; padding: 1rem; background: #f8f9fa; border-radius: 12px; }
-    pre { background: #2d2d2d; color: #f8f8f2; padding: 1.2rem; border-radius: 12px; overflow-x: auto; font-size: 0.95rem; margin: 1.5rem 0; }
-    code { font-family: 'Fira Code', monospace; }
-    .popup, .overlay { display: none; position: fixed; z-index: 999; }
-    .popup.active { display: block; top: 50%; left: 50%; transform: translate(-50%,-50%); background: white; padding: 2.5rem; border-radius: 20px; box-shadow: 0 20px 60px rgba(0,0,0,0.2); max-width: 420px; text-align: center; }
-    .overlay.active { display: block; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.6); }
-    .close { background: #ddd; width: 36px; height: 36px; border-radius: 50%; position: absolute; top: -12px; right: -12px; cursor: pointer; font-size: 1.4rem; line-height: 36px; }
-    table { width: 100%; border-collapse: collapse; margin: 2rem 0; }
-    th, td { padding: 1rem; text-align: center; border: 1px solid #eee; }
-    th { background: var(--p); color: white; }
-    .highlight { background: #f0efff; font-weight: bold; }
-    .footnote { font-size: 0.85rem; color: var(--gray); text-align: center; margin: 3rem 0; }
-    @media (max-width: 600px) { .container { padding: 1rem; } h1 { font-size: 2.2rem; } }
+    .gradient-hero { background: linear-gradient(135deg, #6C5CE7 0%, #A29BFE 100%); }
+    .sticky-cta { position: fixed; bottom: 20px; right: 20px; z-index: 50; }
+    pre { background: #1a1a1a !important; border-radius: 12px; padding: 1.5rem; }
+    .ad-unit { min-height: 280px; }
   </style>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Fira+Code&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="bg-gray-50 text-gray-800 dark:bg-gray-900 dark:text-gray-100">
 
   <!-- HERO -->
-  <div class="hero">
-    <h1>The Ultimate 2025 AI Toolkit for Etsy Sellers</h1>
-    <p>I went from <strong>$800 → $12K/month</strong> in 90 days using AI.<br>Here are the <strong>7 tools + exact prompts</strong> I use every day.</p>
-    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80" alt="Etsy AI Dashboard">
-    <a href="#free-pack" class="btn">Download FREE 37-Prompt Pack Now</a>
-  </div>
+  <header class="gradient-hero text-white py-20">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <h1 class="text-5xl md:text-6xl font-bold mb-6">I 3X'd My Etsy Sales to <span class="text-yellow-300">$12K/Month</span> Using AI</h1>
+      <p class="text-xl mb-8">Here are the <strong>7 AI tools</strong>, <strong>exact prompts</strong>, and <strong>47-minute workflow</strong> I use daily.</p>
+      <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80" alt="Etsy AI Dashboard" class="rounded-2xl shadow-2xl mx-auto max-w-full">
+      <a href="#free-pack" class="inline-block mt-8 bg-white text-primary font-bold py-4 px-8 rounded-full text-lg shadow-lg hover:shadow-xl transition">Download FREE 37-Prompt Pack</a>
+    </div>
+  </header>
 
-  <div class="container">
+  <!-- NAV -->
+  <nav class="sticky top-0 bg-white dark:bg-gray-800 shadow-md z-40">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+      <a href="#" class="font-bold text-xl">Etsy AI Hustle</a>
+      <button onclick="document.documentElement.classList.toggle('dark')" class="p-2 rounded-lg bg-gray-200 dark:bg-gray-700">🌙</button>
+    </div>
+  </nav>
 
-    <!-- Intro -->
-    <p><em>Last updated: October 29, 2025 | By AI Etsy Pro</em></p>
-    <p>I’m not a tech genius. I’m a <strong>former barista</strong> who turned a $47 Etsy side hustle into a <strong>$12,000/month passive income stream</strong> — all thanks to AI.</p>
-    <p>In this guide, I’ll show you the <strong>exact 7 AI tools</strong> I use, the <strong>prompts I copy-paste</strong>, and the <strong>47-minute workflow</strong> that generates $300–$1,000 per listing.</p>
+  <div class="max-w-4xl mx-auto px-6 py-12">
 
-    <!-- Ad -->
-    <div class="ad">
+    <!-- Ad 1 -->
+    <div class="ad-unit my-12 text-center">
       <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-1234567890123456" data-ad-slot="1111111111" data-ad-format="auto" data-full-width-responsive="true"></ins>
       <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
     </div>
 
-    <h2>Tool #1: Mokker AI – Turn White Backgrounds into Pro Mockups in 45 Seconds</h2>
-    <div class="card">
-      <img src="https://images.pexels.com/photos/7433863/pexels-photo-7433863.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Mokker AI Mockup">
-      <p><strong>Before AI:</strong> 2 hours in Photoshop. <strong>After:</strong> 45 seconds.</p>
-      <p>I used to pay $50 per mockup on Fiverr. Now, I upload a plain white photo of my candle, pick “Cozy Living Room” scene, and export 5 angles — <strong>done</strong>.</p>
-      <p><strong>Pro Tip:</strong> Use the “Etsy Mockup Pack” template. My conversion rate jumped <strong>42%</strong> overnight.</p>
-      <p><a href="https://mokker.ai/?ref=etsyai" target="_blank" class="btn">Try Mokker AI (30% Off First Month)</a></p>
-    </div>
+    <article class="prose prose-lg dark:prose-invert max-w-none">
 
-    <h2>Tool #2: ChatGPT “Etsy Wizard” – SEO Descriptions That Rank #1</h2>
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1639413560955-0a754600b9e0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80" alt="ChatGPT Etsy Prompt">
+      <p class="text-sm text-gray-500">Last updated: October 29, 2025 | By <strong>AI Etsy Pro</strong></p>
+
+      <h2>How I Went From $800 to $12,000/Month on Etsy Using AI</h2>
+      <p>I’m not a designer. I’m not a marketer. I’m a <strong>former barista</strong> who started selling handmade candles on Etsy in 2023.</p>
+      <p>Fast forward to today: I run a <strong>6-figure Etsy business</strong> with <strong>zero employees</strong>, using <strong>AI to do 90% of the work</strong>.</p>
+      <p>In this guide, I’ll show you:</p>
+      <ul>
+        <li>The <strong>exact 7 AI tools</strong> I use</li>
+        <li>The <strong>prompts I copy-paste</strong></li>
+        <li>My <strong>47-minute workflow</strong> that generates $300–$1K per listing</li>
+        <li>Case studies: <strong>$47K in 90 days</strong> from one product</li>
+      </ul>
+
+      <!-- TOOL 1 -->
+      <h2>Tool #1: Mokker AI – Pro Mockups in 45 Seconds ($29/mo)</h2>
+      <img src="https://images.pexels.com/photos/7433863/pexels-photo-7433863.jpeg" alt="Mokker AI" class="rounded-xl shadow-lg my-8">
+      <p>Before: I spent <strong>2 hours in Photoshop</strong> per mockup. After: <strong>45 seconds</strong>.</p>
+      <p>I upload a plain white photo → pick “Cozy Bedroom” → export 5 angles → done.</p>
+      <p><strong>Conversion boost:</strong> +42% after switching to Mokker mockups.</p>
+      <p><a href="https://mokker.ai/?ref=etsyai" target="_blank" class="text-primary font-bold">Try Mokker AI → 30% Off</a></p>
+
+      <!-- Ad 2 -->
+      <div class="ad-unit my-12">
+        <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-1234567890123456" data-ad-slot="2222222222" data-ad-format="auto"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+      </div>
+
+      <!-- TOOL 2 -->
+      <h2>Tool #2: ChatGPT “Etsy Wizard” – Rank #1 in 9 Days (Free–$20/mo)</h2>
       <p>Here’s the <strong>exact prompt</strong> I use for every listing:</p>
       <pre><code class="language-plaintext">You are an Etsy SEO expert with 10 years of experience. Write a 160-word product description for a [handmade beeswax candle] that smells like vanilla and lavender. Include:
-- Emotional storytelling
+- Emotional storytelling (e.g., "light up her evening")
 - 5 long-tail keywords (e.g., “eco-friendly gift for her”)
-- Sensory details
+- Sensory details (smell, texture)
 - Eco-friendly packaging
 - End with a CTA
 Target: gift buyers aged 25–45. Tone: warm, luxurious, trustworthy.</code></pre>
-      <p><strong>Result:</strong> My listings went from page 7 to <strong>page 1 in 9 days</strong>. One candle now makes <strong>$1,200/month passive</strong>.</p>
-      <p><a href="#free-pack" class="btn">Get My 37 Etsy Prompts FREE</a></p>
-    </div>
+      <p><strong>Result:</strong> One listing went from page 7 → <strong>page 1 in 9 days</strong>. Now makes <strong>$1,200/month passive</strong>.</p>
 
-    <!-- Repeat for Tools 3–7 with 300+ words each -->
-    <!-- Tool 3: EtsyHunt AI -->
-    <h2>Tool #3: EtsyHunt AI – Find $10K/Month Products Before They Trend</h2>
-    <div class="card">
-      <img src="https://images.pexels.com/photos/7433868/pexels-photo-7433868.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="EtsyHunt Dashboard">
-      <p>I spotted “mushroom lamp” 3 months early. Invested $200 in materials. <strong>Sold $47,000 in 90 days</strong>.</p>
-      <p>EtsyHunt shows:
-- Search volume
-- Competition score
-- Profit margin
-- Trend velocity</p>
-      <p><a href="https://etsyhunt.ai/?ref=etsyai" target="_blank" class="btn">Try EtsyHunt AI (7-Day Free Trial)</a></p>
-    </div>
+      <!-- TOOL 3 -->
+      <h2>Tool #3: EtsyHunt AI – Find $10K/Month Products ($19/mo)</h2>
+      <p>Spotted “mushroom lamp” 3 months early → <strong>$47,000 in 90 days</strong>.</p>
+      <p>EtsyHunt shows: search volume, competition, profit margin, trend velocity.</p>
 
-    <!-- Tool 4: Canva Magic Studio -->
-    <h2>Tool #4: Canva Magic Studio – 10 Pinterest Pins in 60 Seconds</h2>
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1611224923853-80b023a2f870?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80" alt="Canva Pinterest Pins">
-      <p>I type: “Create 10 Pinterest pins for a lavender candle gift” — AI generates <strong>10 ready-to-post images</strong>.</p>
-      <p>Traffic from Pinterest: <strong>300% increase</strong>.</p>
-      <p><a href="https://canva.com/join/ai-etsy" target="_blank" class="btn">Start Canva Free</a></p>
-    </div>
+      <!-- TOOL 4 -->
+      <h2>Tool #4: Canva Magic Studio – 10 Pinterest Pins in 60 Seconds (Free)</h2>
+      <p>Type: “Create 10 Pinterest pins for lavender candle gift” → AI generates 10 images.</p>
+      <p>Pinterest traffic: <strong>+300%</strong>.</p>
 
-    <!-- Tool 5: Helium 10 + Cerebro -->
-    <h2>Tool #5: Helium 10 Cerebro – Steal Amazon Winners for Etsy</h2>
-    <div class="card">
-      <img src="https://images.pexels.com/photos/7433870/pexels-photo-7433870.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Helium 10">
-      <p>Found “cat slow feeder bowl” on Amazon. Copied design. <strong>$3,200/month passive</strong>.</p>
-      <p><a href="https://helium10.com/?ref=etsyai" target="_blank" class="btn">Try Helium 10</a></p>
-    </div>
+      <!-- TOOL 5 -->
+      <h2>Tool #5: Helium 10 Cerebro – Steal Amazon Winners ($39/mo)</h2>
+      <p>Found “cat slow feeder” → <strong>$3,200/month</strong>.</p>
 
-    <!-- Tool 6: Tidio AI Chatbot -->
-    <h2>Tool #6: Tidio AI – 24/7 Sales Assistant</h2>
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1596526131083-e8c633c948d2?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80" alt="Tidio Chat">
+      <!-- TOOL 6 -->
+      <h2>Tool #6: Tidio AI Chatbot – 24/7 Sales ($29/mo)</h2>
       <p>Auto-upsells: “Want gift wrapping?” → <strong>+19% add-to-cart</strong>.</p>
-      <p><a href="https://tidio.com/?ref=etsyai" target="_blank" class="btn">Try Tidio</a></p>
-    </div>
 
-    <!-- Tool 7: Printify + Midjourney -->
-    <h2>Tool #7: Printify + Midjourney – Zero-Inventory AI T-Shirts</h2>
-    <div class="card">
-      <img src="https://images.pexels.com/photos/7433872/pexels-photo-7433872.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Midjourney T-Shirt">
-      <p>Prompt: <code>/imagine minimalist line art cat wearing sunglasses, retro vibe --v 5</code></p>
+      <!-- TOOL 7 -->
+      <h2>Tool #7: Printify + Midjourney – Zero-Inventory AI POD (Free–$29/mo)</h2>
+      <p>Prompt: <code>/imagine minimalist line art cat wearing sunglasses --v 5</code></p>
       <p>Printify handles printing/shipping. <strong>$0 upfront</strong>.</p>
-      <p><a href="https://printify.com/?ref=etsyai" target="_blank" class="btn">Try Printify</a></p>
+
+      <!-- Ad 3 -->
+      <div class="ad-unit my-12">
+        <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-1234567890123456" data-ad-slot="3333333333" data-ad-format="auto"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+      </div>
+
+      <!-- WORKFLOW TABLE -->
+      <h2>My 47-Minute AI Workflow (Copy-Paste)</h2>
+      <table class="w-full border-collapse my-8 text-left">
+        <thead class="bg-primary text-white">
+          <tr><th class="p-4">Step</th><th class="p-4">Tool</th><th class="p-4">Time</th></tr>
+        </thead>
+        <tbody class="bg-gray-50 dark:bg-gray-800">
+          <tr><td class="p-4">1. Trend Spotting</td><td class="p-4">EtsyHunt AI</td><td class="p-4">15 min</td></tr>
+          <tr><td class="p-4">2. Design</td><td class="p-4">Midjourney</td><td class="p-4">10 min</td></tr>
+          <tr><td class="p-4">3. Mockups</td><td class="p-4">Mokker</td><td class="p-4">5 min</td></tr>
+          <tr><td class="p-4">4. Description</td><td class="p-4">ChatGPT</td><td class="p-4">7 min</td></tr>
+          <tr><td class="p-4">5. Pins</td><td class="p-4">Canva</td><td class="p-4">10 min</td></tr>
+          <tr class="bg-purple-100 dark:bg-purple-900 font-bold"><td colspan="2" class="p-4">Total Revenue Potential</td><td class="p-4">$300–$1K</td></tr>
+        </tbody>
+      </table>
+
+      <!-- FREE PACK CTA -->
+      <div id="free-pack" class="bg-gradient-to-r from-purple-600 to-pink-600 text-white p-12 rounded-3xl text-center my-16">
+        <h2 class="text-4xl font-bold mb-4">Steal My FREE Etsy AI Prompt Pack</h2>
+        <p class="text-xl mb-6">37 ChatGPT prompts + Midjourney formulas + Canva templates<br>Used to generate <strong>$100K+ in sales</strong></p>
+        <a href="#" onclick="openPopup()" class="bg-white text-primary font-bold py-4 px-10 rounded-full text-lg shadow-lg inline-block">Download FREE Now</a>
+      </div>
+
+    </article>
+
+    <!-- Ad 4-8 -->
+    <div class="grid md:grid-cols-2 gap-8 my-16">
+      <div class="ad-unit"><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-1234567890123456" data-ad-slot="4444444444" data-ad-format="auto"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script></div>
+      <div class="ad-unit"><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-1234567890123456" data-ad-slot="5555555555" data-ad-format="auto"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script></div>
     </div>
-
-    <!-- Workflow Table -->
-    <h2>My 47-Minute AI Workflow (Copy-Paste)</h2>
-    <table>
-      <tr><th>Step</th><th>Tool</th><th>Time</th></tr>
-      <tr><td>1. Trend Spotting</td><td>EtsyHunt AI</td><td>15 min</td></tr>
-      <tr><td>2. Design</td><td>Midjourney</td><td>10 min</td></tr>
-      <tr><td>3. Mockups</td><td>Mokker</td><td>5 min</td></tr>
-      <tr><td>4. Description</td><td>ChatGPT</td><td>7 min</td></tr>
-      <tr><td>5. Pins</td><td>Canva</td><td>10 min</td></tr>
-      <tr class="highlight"><td colspan="2"><strong>Total Revenue Potential</strong></td><td><strong>$300–$1K</strong></td></tr>
-    </table>
-
-    <!-- Lead Magnet -->
-    <div id="free-pack" style="background:#f0efff;padding:3rem;border-radius:20px;text-align:center;margin:3rem 0;">
-      <h2>Steal My FREE Etsy AI Prompt Pack</h2>
-      <p><strong>37 ChatGPT prompts + Midjourney formulas + Canva templates</strong><br>Used to generate <strong>$100K+ in sales</strong>.</p>
-      <a href="#" onclick="openPopup()" class="btn" style="font-size:1.2rem;padding:1.2rem 2.5rem;">Download FREE Now</a>
-    </div>
-
-    <p class="footnote">*Affiliate links help keep this guide free. I only recommend tools I pay for and use daily.</p>
 
   </div>
 
-  <!-- Pop-up -->
-  <div class="overlay" id="overlay" onclick="closePopup()"></div>
-  <div class="popup" id="popup">
-    <div class="close" onclick="closePopup()">×</div>
-    <h3>🎉 Your FREE Etsy AI Prompt Pack</h3>
-    <p>Enter your email for instant access:</p>
+  <!-- STICKY CTA -->
+  <div class="sticky-cta">
+    <a href="#free-pack" class="bg-primary text-white p-4 rounded-full shadow-2xl font-bold flex items-center gap-2">
+      <span>🎁</span> FREE Prompt Pack
+    </a>
+  </div>
+
+  <!-- POP-UP -->
+  <div class="fixed inset-0 bg-black bg-opacity-60 hidden z-50" id="overlay" onclick="closePopup()"></div>
+  <div class="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-white dark:bg-gray-800 p-8 rounded-3xl shadow-2xl max-w-md w-full hidden z-50" id="popup">
+    <button class="absolute -top-4 -right-4 bg-red-500 text-white w-10 h-10 rounded-full" onclick="closePopup()">×</button>
+    <h3 class="text-2xl font-bold mb-4">🎉 Your FREE Prompt Pack</h3>
     <form action="https://YOUR_FORM_LINK" method="POST">
-      <input type="email" placeholder="you@etsy.com" style="width:100%;padding:1rem;margin:1rem 0;border-radius:12px;border:1px solid #ddd;" required>
-      <button type="submit" class="btn" style="width:100%;padding:1rem;">Send Me the Prompts</button>
+      <input type="email" placeholder="you@etsy.com" class="w-full p-4 rounded-xl border mb-4" required>
+      <button type="submit" class="w-full bg-primary text-white py-4 rounded-xl font-bold">Send Me the Prompts</button>
     </form>
-    <p style="font-size:0.8rem;margin-top:1rem;">No spam. Unsubscribe anytime.</p>
   </div>
 
   <script>
-    function openPopup(){document.getElementById('popup').classList.add('active');document.getElementById('overlay').classList.add('active');}
-    function closePopup(){document.getElementById('popup').classList.remove('active');document.getElementById('overlay').classList.remove('active');}
-    setTimeout(openPopup,15000);
-    (adsbygoogle = window.adsbygoogle || []).push({});
+    function openPopup(){document.getElementById('popup').classList.remove('hidden');document.getElementById('overlay').classList.remove('hidden');}
+    function closePopup(){document.getElementById('popup').classList.add('hidden');document.getElementById('overlay').classList.add('hidden');}
+    setTimeout(openPopup, 15000);
   </script>
 
 </body>
